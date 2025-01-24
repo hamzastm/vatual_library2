@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rowdies:wght@300;400;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root
+{
+    --maincolor: #331d0e;
+    --maincolor2: rgb(15, 9, 3);
+    --mainhover: #7D6050;
+    --lightcolor: #F7F7F2;
+    --lightcolor2: rgb(255, 255, 182);
+    --lightcolor3 : #FFE9D1;
+    --lightcolor4 : #E6DACE;
+}
+
+
+body
+{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-page
+{
+    background-color: antiquewhite;
+    width: 20rem;
+    height: 30rem;
+    border: 2px solid var(--maincolor);
+    transition: .4s ease-in-out;
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.book:hover .first-page
+{
+    transform: rotateY(-180deg) translateX(-100%);
+}
+
+.book
+{
+    position: relative;
+}

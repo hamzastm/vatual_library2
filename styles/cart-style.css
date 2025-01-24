@@ -1,0 +1,168 @@
+:root
+{
+    --maincolor: #331d0e;
+    --maincolor2: #5b3923;
+    --mainhover: #7D6050;
+    --lightcolor: #F7F7F2;
+    --lightcolor2: rgb(255, 255, 182);
+    --lightcolor3 : #5B3923;
+    --alert-red-solid : #992c11;
+    --alert-red-trans : #ffcbbeef;
+    --alert-green-solid : #054b04;
+    --alert-green-trans : #91c491f3;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rowdies:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10rem;
+    height: 1000rem;
+}
+
+h4
+{
+    width: 100%;
+    display: flex;
+    margin-block: 2rem;
+    color: var(--mainhover);
+}
+
+.title
+{
+    display: flex;
+    width: 96%;
+    padding-block: .5rem;
+    color: var(--maincolor);
+}
+
+hr
+{
+    width: 98%;
+    border: none;
+    border-top: var(--mainhover) 2px solid;
+    border-radius: 10px;
+}
+
+.cart-items-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: var(--maincolor) 0 0 20px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin-block: 2rem;
+}
+
+.item
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 1rem;
+    text-align: left;
+    box-shadow: var(--maincolor) 0 0 10px;
+    width: 90%;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+.delete-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #cccccc00;
+    border-radius: 50%;
+    transition: all .4s;
+}
+.delete-btn:hover
+{
+    border: 1px solid var(--mainhover);
+}
+
+.delete-btn svg
+{
+    transform: scale(1.3);
+    padding: .5rem;
+}
+
+.amount
+{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    line-height: 0
+}
+
+.amount button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 0;
+    border-radius: 50%;
+    border: solid transparent 2px;
+    background-color: transparent;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.amount button span
+{
+    margin-bottom: 3px;
+}
+
+.amount .inc:hover
+{
+    border-color: solid 1px var(--alert-green-solid);
+    color: var(--alert-green-solid);
+}
+
+.amount .dic:hover
+{
+    border-color: solid 1px var(--alert-red-solid);
+    color: var(--alert-red-solid);
+}
+
+.amount .text-input-amount
+{
+    width: 2rem;
+    height: 2rem;
+    font-size: 22px;
+    text-align: center;
+    border: solid 1px var(--maincolor);
+    background-color: transparent;
+}
+
+.amount .text-input-amount::placeholder
+{
+    color: var(--maincolor);
+}
