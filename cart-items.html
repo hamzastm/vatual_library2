@@ -7,74 +7,13 @@
     <link rel="stylesheet" href="styles/bar-style.css">
     <link rel="stylesheet" href="styles/cart-style.css">
     <link rel="stylesheet" href="styles/footer-style.css">
+    <link rel="stylesheet" href="styles/main-style.css">
+
     
 </head>
 <body>
     <nav class="bar-wrapper">
-        <div class="bar">
-            <ul class="right">
-                <li class ="nav-btns"><a class = "nav-btns-text" href="#">القائمة الرئيسية</a></li>
-                <div>
-                    <li class="Category nav-btns"><a class = "nav-btns-text" href="geners.html">التصنيفات</a><svg class="cati-arrow" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z"/></svg>
-                        <div class="genres">
-                            <div class="arrow"></div>
-                    
-                            <h1>اختر التصنيف</h1>
-                            <div class="list">
-                                <ul>
-                                    <li>
-                                        <a class="genre" href="#">خيال</a>                            
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">روايات</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">اثارة</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">روايات رومنسية</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">سرد</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">تحفيز الذات</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">غموض</a>
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">خيال علمي</a>                            
-                                    </li>
-                                    <li>
-                                        <a class="genre" href="#">خيال تاريخي</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-                <li class ="nav-btns"><a class = "nav-btns-text" href="#">المزيد من المعلومات</a></li>
-                <li class ="nav-btns"><a class = "nav-btns-text" href="#">تواصل</a></li>
-            </ul>   
-            <div class="mid">
-                <div class="search-wraper">
-                    <div class="search">
-                        <input type="text" placeholder="ابحث عن كتاب">
-                        <button class="search-btn" type="submit">
-                            <img style="margin-top: 1px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT9JREFUSEvVletxwkAMhKVKgEqASogrgVQCqSSmktDJxstIGWFOPo8fP3IznhsMp09a6RaVlZeuHF9SAICtiJxE5GDPo9tbEeH+parcq6sIAHDuTl4GTjP4TVU/a4Q3AIBvy5hnCbmramsVsZpNgLeqehyCvAAAfHQBriZDw8ClwwZjIpTxMlTJH8AO/VjAYxbcgQBYDSGUK00mAlx3atvUtOX3AFgtq06riAD/MbO5jQR4FWkvIoDyUNPd2BEMsj5UdVdKahbAZAL3rtHFkY8AH89qg0OjferSvi3V5FEA6j9lTFlQ2repF82n53nbR120oKuPK19xXO9mcvzMKvc9n+JFY9+K5jfV7Nyn2GRCU0jNrikFM+bO9bRsl6TnSUXI7D+cGmQ2wC4bZXJ3fbGaRQABcuj72GKAzBz/P+AX5rCqGXiDU4UAAAAASUVORK5CYII="/>
-                        </button>
-                    </div>
-                </div>
-                
-            </div>
-            <a href = "index.html" class="left">
-                <div class="logo-text"><span class="title1">GALAXY</span><span class="title2">BOOKS</span></div>
-            </a>
-            <div class="sign-up">
-                <a href="sign-up-form.html" target="self">تسجيل الدخول</a>
-            </div>
-        </div>         
+                 
     </nav>
     <main>
         <h4>Home -> Cart</h4>
@@ -83,27 +22,17 @@
             <h1 class="title">Shoping Cart</h1>
             <hr>
             <div class="items">
-                <div class="item" id = "cart-item" >
-                    <button class="delete-btn" onclick="del_item(this);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(125, 96, 80, 1);"><path d="M6 7H5v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7H6zm4 12H8v-9h2v9zm6 0h-2v-9h2v9zm.618-15L15 2H9L7.382 4H3v2h18V4z"></path></svg></button>
-                    <div class="mid">
-                        <img src="assets/s-fiction/book1.jpg" alt="book">
-                        <div class="ditals" id="details">
-                            <div class="book-name" id="book-name">1</div>
-                            <div class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nobis?</div>
-                        </div>
-                    </div>
-                    <div class="amount">
-                        <button class="dic" onclick="dicitem('text-input-amount')"><span>-</span></button>
-                        <input type="text" placeholder="0" class="text-input-amount" id="text-input-amount">
-                        <button class="inc" onclick="incitem('text-input-amount')"><span>+</span></button>
-                    </div>
-                    <div class="price">7$</div>
-                </div>
                 
             </div>
+            <div class="cart-control">
+                <button class="CheckOutBtn btn">Continue to payment</button>
+                <div class="FinalPrice"><h3 class="">total price:</h3><span class="price" id="FinalPrice"></span></div>
+                <button class="ClearBtn btn">Clear all</button>
+            </div>
         </div>
-        
-        <script src="script.js"></script>
+        <script src="data/cart.js"></script>
+        <script src="scripts/cartScript.js"></script>
+        <script src="scripts/script.js"></script>
 
     </main>
 </body>
@@ -132,7 +61,7 @@
             </a>
         </ul>
     </nav>
-    <div class="F-logo-text"><img src="assets/copyright.png"> 2024 GALAXYBOOKS , جميع الحقوق محفوظة</div>
+    <div class="F-logo-text">2024 GALAXYBOOKS , copyright&copy; all rights reserved</div>
 </footer>
 
 </html>

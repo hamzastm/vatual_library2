@@ -25,13 +25,11 @@ main
 {
     display: flex;
     flex-direction: column;
-    padding-inline: 10rem;
-    height: 1000rem;
+    padding-inline: 10%;
 }
 
 h4
 {
-    width: 100%;
     display: flex;
     margin-block: 2rem;
     color: var(--mainhover);
@@ -39,9 +37,6 @@ h4
 
 .title
 {
-    display: flex;
-    width: 96%;
-    padding-block: .5rem;
     color: var(--maincolor);
 }
 
@@ -59,9 +54,11 @@ hr
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow: var(--maincolor) 0 0 20px;
+    box-shadow: var(--maincolor) 0 0 4px;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 5px;
+    background-color: var(--lightcolor);
+    margin: 20px auto;
 }
 
 .items{
@@ -81,9 +78,9 @@ hr
     justify-content: space-around;
     padding-block: 1rem;
     text-align: left;
-    box-shadow: var(--maincolor) 0 0 10px;
+    box-shadow: var(--mainhover) 0 0 4px;
     width: 90%;
-    border-radius: 1rem;
+    border-radius: 5px;
     flex-wrap: wrap;
 }
 
@@ -165,4 +162,73 @@ hr
 .amount .text-input-amount::placeholder
 {
     color: var(--maincolor);
+}
+
+.book-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--maincolor);
+}
+
+.price{
+    display: flex;
+    flex-direction: row-reverse;
+    color: var(--alert-green-solid);
+    font-weight: 900;
+}
+
+.FinalPrice{
+    display: flex;
+    font-weight: 900;
+    font-size: 20px;
+    align-items: center;
+    gap: 20px;
+    color: #331d0e;
+    text-transform: capitalize;
+}
+
+.cart-control{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 16px;
+}
+
+.CheckOutBtn{
+    background-color: #d2fdd1;
+    border: 2px var(--alert-green-solid) solid;
+    color: var(--alert-green-solid);
+}
+
+.CheckOutBtn:hover{
+    background-color: var(--alert-green-trans);
+    box-shadow:  0 0 2px;
+}
+
+
+.ClearBtn{
+    background-color: var(--alert-red-trans);
+    border: 2px var(--alert-red-solid) solid;
+    color: var(--alert-red-solid);
+}
+
+.ClearBtn:hover{
+    background-color: rgba(255, 51, 0, 0.397);
+    box-shadow:  0 0 2px;
 }

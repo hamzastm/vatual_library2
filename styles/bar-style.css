@@ -22,7 +22,7 @@
     font-family: Cairo;
     margin: 0;
     padding: 0;
-    text-align: right;
+    text-align: left;
 }
 
 header
@@ -75,7 +75,7 @@ body
 {
     position: absolute;
     bottom: 10rem;
-    right: 3rem;
+    left: 3rem;
     padding: 20px;
     border: 1px solid var(--lightcolor2);
     border-radius: 50px;
@@ -106,8 +106,6 @@ body
 .bar
 {
     display: flex;
-    flex-direction: row-reverse;
-    min-height: fit-content;
     justify-content: space-between;
     align-items: center;
     background-color: var(--lightcolor);
@@ -180,6 +178,7 @@ body
 .mid .search-wraper
 {
     min-width: 7rem;
+    position: relative;
 }
 
 .mid .search
@@ -206,7 +205,7 @@ body
     display: flex;
     align-items: center;
     top: 4px;
-    left: 4px;
+    right: 4px;
     border: none;
     padding:11.5px;
     border-radius: 40px;
@@ -217,15 +216,14 @@ body
 
 .mid .search .search-btn:hover
 {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     background-color: var(--mainhover);
 }
 
 .right
 {
     display: flex;
-    flex-direction: row-reverse;
     padding-right:20px;
     flex-wrap: wrap;
 }
@@ -295,7 +293,7 @@ body
     gap: 10px;
     position: absolute;
     top: 40px;
-    right: -72px;
+    left: -72px;
     background-color: var(--mainhover);
     color: var(--lightcolor);
     border-radius: 30px;
@@ -335,8 +333,8 @@ body
     width: fit-content;
     padding: 3px;
     position: absolute;
-    top: -8px;
-    right: 115px;
+    top: -4px;
+    left: 42.1%;
     background-color: var(--mainhover);
     border: 5px var(--mainhover) solid;
     transform: rotate(45deg);
