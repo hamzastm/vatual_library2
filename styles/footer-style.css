@@ -1,0 +1,141 @@
+
+
+footer
+{
+    background-color: #31241c;
+    color: var(--lightcolor);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 0;
+    box-shadow: 0 0 10px var(--maincolor);
+}
+
+footer a
+{
+    text-decoration: none;
+}
+
+.contact
+{
+    display: flex;
+    max-width: 200px;
+    margin-block: 16px;
+    gap: 20px;
+}
+
+.contact button
+{
+    border:1px solid var(--lightcolor);
+    border-radius: 40px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .4s;
+    width: 100%;
+}
+
+.contact button img
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contact button:hover
+{
+    background-color: var(--lightcolor3);
+    border-color: var(--lightcolor3);
+    box-shadow: 0 0 4px var(--maincolor);
+}
+
+footer nav{
+    margin-bottom: 1rem;
+    background-color: var(--lightcolor1);
+}
+
+footer nav ul
+{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+footer nav ul li
+{
+    text-align: center;
+    position: relative;
+    color: var(--lightcolor);
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+footer nav ul li:hover
+{
+    color: var(--lightcolor2);
+}
+
+footer nav ul li::after
+{
+    position: absolute;
+    content: "";
+    background-color: var(--lightcolor);
+    padding: 2px 2px;
+    border-radius: 10px;
+    bottom: -5px;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: abackground-color .3s ease-in-out ,inset .3s ease-in-out;
+}
+
+li:hover::after
+{
+    background-color: var(--lightcolor2);
+    right: 2%;
+}
+
+footer .F-logo-text
+{
+    box-shadow: 0 0 10px rgb(27, 24, 21);
+    display: flex;
+    align-items: end;
+    font-size: 16px;
+    background-color: rgb(34, 28, 23);
+    padding-block: 2px;
+    justify-content: center;
+    width: 100%;
+}
+
+.social
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: transparent;
+    border:1px solid var(--lightcolor2);
+    border-radius: 50%;
+    font-size: 20px;
+    padding:10px;
+    width:50rem;
+    color: var(--maincolor);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.social:hover
+{
+    background-color: var(--lightcolor2);
+    box-shadow: 0 0 8px var(--mainhover);
+}
+
+.social img
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
